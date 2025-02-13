@@ -1,0 +1,35 @@
+.app-container {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Custom styles for centering the modal */
+.modal-dialog {
+  max-width: 500px; /* Optional: control the width of the modal */
+  margin: 30px auto; /* This centers the modal horizontally and ensures it's well-positioned vertically */
+}
+
+.modal-content {
+  padding: 20px; /* Optional: Add padding inside the modal */
+}
+
+.mo-info {
+  color: rgb(19, 172, 19);
+}
+
+.lang-modal {
+  font-size: 20px;
+}
+
+.lang {
+  margin: 5px;
+}
+
+.modal-header {
+  height: 25px; /* Set the height of the header */
+  padding: 0 15px; /* Remove top/bottom padding */
+}
+
+.dropdown-menu {
+  left: -38px;
+}/*# sourceMappingURL=app.component.css.map */

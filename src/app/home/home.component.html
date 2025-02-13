@@ -1,0 +1,228 @@
+<br><br>
+<!-- *********************************** -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+
+  <!-- Carousel Inner -->
+  <div class="carousel-inner">
+
+
+    <div class="carousel-item active">
+      <img src="assets/images/slider3.jpeg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption d-block">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/slider2.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/slider1.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Control with Font Awesome for Previous and Next -->
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+    <i class="fas fa-chevron-left" style="color: black; font-size: 30px;"></i>
+  </button>
+
+  <!-- Next Carousel Button -->
+  <!-- Next Carousel Button with Font Awesome Icon -->
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+    <i class="fas fa-chevron-right" style="color: black; font-size: 30px;"></i>
+  </button>
+
+</div>
+
+<!-- ************************************************ -->
+<div class="container mt-5" style="max-width: 83%; ">
+  <h2 class="dept">
+    <h3 class="d1"></h3>
+    {{ 'title_Division' | translate }}
+  </h2>
+  <!-- <h2 class="d1">Divisions</h2> -->
+  <br>
+  <div class="row">
+
+
+    <!-- warehouse      -->
+    <div class="col-12 col-sm-6 col-md-6 mb-3 con custom-margin-bottom" style="padding: 5px;">
+      <div routerLink="/smartwarehouse1" class="image-container d-flex align-items-center ">
+        <img src="assets/images/smart-warehouse.jpg" alt="Image 4" class="rounded-circle"
+          style="margin-left: 20px; margin-right: 40px;">
+
+        <p class="mb-0 n-dept" style="margin-right: 10px; color: white;">{{ 'division4' | translate }}</p>
+        <a>
+          <i class="fas fa-chevron-right" style="margin-right: 20px; color: white;"></i>
+        </a>
+      </div>
+
+    </div>
+    <!-- ======================================================================================== -->
+    <!-- component  calibration1 -->
+    <div class="col-12 col-sm-6 col-md-6 mb-3 con" style="padding: 5px;">
+      <div routerLink="/calibration1" class="image-container d-flex align-items-center ">
+
+        <img src="assets/images/q2.png" alt="Image 4" class="rounded-circle"
+          style="margin-left: 20px; margin-right: 50px; background-color: white;">
+
+        <p class="mb-0 n-dept" style="margin-right: 10px; color: white; margin-left: -20px;"> &nbsp;
+          &nbsp;{{'Calibration' | translate}}
+          &nbsp; {{ '&' | translate }}&nbsp; {{'Qualifications' | translate}}</p>
+        <a>
+          <i class="fas fa-chevron-right" style="margin-right: 20px; color: white;"></i>
+        </a>
+      </div>
+    </div>
+    <!-- ========================================================================================== -->
+
+    <!-- refrigeration1  electro  -->
+    <div class="col-12 col-sm-6 col-md-6 mb-3  con" style="padding: 5px;">
+      <div routerLink="/refrigeration1" class="image-container d-flex align-items-center ">
+        <img src="assets/images/ff.png" alt="Image 4" class="rounded-circle"
+          style="margin-left: 20px; margin-right: 50px;">
+        <p class="mb-0 n-dept"
+          [ngStyle]="{'margin-top.px': shouldAddMargin ? 20:0, 'margin-right.px': 10, 'color': 'white', 'margin-left.px': -20}">
+          {{'Refrigeration' | translate}} &nbsp;&nbsp;
+          {{'&' | translate}} &nbsp;&nbsp;&nbsp;
+          {{'Freezing' | translate}}
+        </p>
+        <a>
+          <i class="fas fa-chevron-right" style="margin-right: 20px;color: white;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ======================================= -->
+    <!-- supplies   calibration -->
+    <div class="col-12 col-sm-6 col-md-6 mb-3  con" style="padding: 5px;">
+      <div routerLink="/supplies1" class="image-container d-flex align-items-center ">
+        <img src="assets/images/suppp.png" alt="Image 4" class="rounded-circle"
+          style="margin-left: 20px; margin-right: 50px;">
+
+        <p class="mb-0 n-dept" style="margin-right: 0px; color: white;margin-left: 10px;">{{'Supplies' | translate}}</p>
+        <a>
+          <i class="fas fa-chevron-right" style="color: white; margin-left: 30px;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ================================================= -->
+
+  </div>
+  <!-- <div class="space-end" style="height: 60px;">
+    
+  </div> -->
+</div>
+
+
+<!-- ******************************** Modal *************************************** -->
+<div class="container">
+  <!-- Language Modal -->
+  <div #languageModal class="modal fade" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true"
+    data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 15px; height: 226px;">
+
+        <div class="modal-body">
+          <div style="display: flex;">
+            <!-- <h5 class="mo-info" style="margin-right: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;مرحبا بكم في شركة سكاربت</h5> -->
+
+            <!-- <h4 class="mo-info" style="margin-right: 38px; margin-left: 94px;">Welcome  </h4> -->
+
+
+            <!-- <h4 class="mo-info" >Welcome To <img src="assets/images/skarptLogo.png" alt="" style="width:80px; height: 40px;"
+              class="rounded-pill;text-center"> </h4> -->
+
+            <!-- <h4 class="mo-info" style="margin-right: -28px;margin-left: 22px;" >Welcome To Skärpt </h4> -->
+            <h4 class="mo-info" style="margin-right: -28px;margin-left: 22px;">Welcome To Skärpt </h4>
+
+
+            <!-- <h5 class="mo-info" style="margin-right: -20px;">مرحبا بكم فى شركة سكاربت </h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 0px;">
+              <span aria-hidden="true"
+                style="float: right; font-size: 30px; margin-right: -53px;margin-top: -45px;">&times;</span>
+            </button>
+          </div>
+
+
+          <!-- <div style="width: 100%;">
+            <img src="assets/images/skarptLogo.png" alt="" style="width:90px; height: 50px;"
+              class="rounded-pill;text-center">
+          </div> -->
+
+
+          <h5 class="mo-in" style="margin-right: 4px;margin-top: 10px;margin-bottom: 20px;">مرحبا بكم فى سكاربت </h5>
+
+          <div class="language-options" style="margin-top: 10px;">
+            <!-- <button class="btn btn-info lang" style="width: 75px;" (click)="selectLanguage('ar')">العربية</button> -->
+            <!-- <button class="btn btn-info lang" (click)="selectLanguage('en')">English</button> -->
+
+            <!-- <button class="btn btn-primary lang" (click)="selectLanguage('en')">English</button> -->
+
+
+            <button class="btn btn-primary langg" style="width: 75px;" (click)="selectLanguage('ar')">العربية</button>
+            <button class="btn btn-primary langg" (click)="selectLanguage('en')">English</button>
+
+          </div>
+
+          <!-- <h5 class="mo-in" style="margin-right: 4px;margin-top: 10px;margin-bottom: 20px;">مرحبا بكم فى سكاربت </h5> -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- </div>   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p class="text-center" >home works!</p>
+ <div>
+    <h1>{{'ddd' | translate}}</h1>
+  </div> -->

@@ -1,0 +1,21 @@
+/* page.component.css */
+.container {
+  margin-top: 100px;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center; /* Align the items vertically in the center */
+}
+
+.icon-text-container i {
+  margin-right: 10px; /* Add space between the icon and the text */
+}
+
+.icon-text-container p {
+  margin: 0; /* Remove the default margin from the <p> tag */
+}
+
+.sub-title {
+  font-size: 16px;
+}/*# sourceMappingURL=calibration.component.css.map */

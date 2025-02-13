@@ -39,14 +39,15 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+            	"node_modules/popper.js/dist/umd/popper.min.js",
+             	"node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]         
           },
           "configurations": {
             "production": {
@@ -110,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "56fc5f43-614f-427b-8fb6-f4149c553215"
   }
 }

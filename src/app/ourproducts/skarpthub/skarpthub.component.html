@@ -1,0 +1,125 @@
+<br><br><br>
+<div class="container" id="content-to-download">
+    <h2 style="color: rgb(24, 24, 99); margin: auto;font-weight: bold; "> Skärpt hup </h2>
+    <br>
+    <h5 style=" margin: auto;"> {{'All-in-one, robust industrial and commercial devices integration' | translate }}</h5>
+
+    <br>
+    <!-- <h2 style="color: rgb(24, 24, 99); margin-left: -70px; ">  Why Skärpt Hub?  </h2> -->
+    <h4 style="color: rgb(24, 24, 99); margin: auto;font-weight: bold; "> {{'Why Skärpt Hub?' | translate}} </h4>
+
+    <div class="container">
+        <div class="row">
+            <!-- Div 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box  d-flex align-items-center  " style=" height: 170px; margin: 5px 0px 5px 0px;">
+                    <img src="assets/images/hup1.png" alt="Image 1" style="margin: 10px;" class="rounded-circle"
+                        width="80px" height="80px">
+                    <div class="cen">
+                        <h5 style="margin: 0px; "> {{'Superior Compatibility: With 1000+ devices and offers
+                            limitless integration within your system.' | translate}}</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex align-items-center " style=" height: 170px; margin: 5px 0px 5px 0px;">
+                    <img src="assets/images/hup2.png" alt="Image 1" style="margin: 10px;" class="rounded-circle"
+                        width="80px" height="80px">
+                    <div class="cen">
+                        <h5 style="margin: 0px;">{{ 'Incredible Scalability: Flexibility to integrate more
+                            devices as your needs grow and technology evolves.' | translate}}</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex align-items-center" style=" height: 170px; margin: 5px 0px 5px 0px;">
+                    <img src="assets/images/hup3.png" alt="Image 1" style="margin: 10px;" class="rounded-circle"
+                        width="80px" height="80px">
+                    <div class="cen">
+                        <h5 style="margin-left: 0px;">{{ 'Secure System: All your devices communicate securely
+                            within one hub server.' | translate}}
+
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- dropdown.component.html -->
+            <div class="container mt-5">
+                <!-- <h2>Interactive Dropdown Example</h2> -->
+
+                <div (click)="toggleDropdown()"
+                    style="background-color: #295179;display: flex;justify-content: space-between;align-items: center;padding: 0px 29px; width: 85%;margin: auto;">
+                    <div>
+
+                        <img src="assets/images/commercial1.png" alt="Image 1" style="margin: 10px 16px 10px -9px; "
+                            class="rounded-circle" width="51px" height="51px">
+                        <h5 style="display: inline;">{{'Industrial' | translate}}</h5>
+                        <!-- 10px 30px 10px -20px; -->
+                    </div>
+                    <i [class]="isDropdownVisible ? 'fa fa-angle-up' : 'fa fa-angle-down'" style="color:white;"></i>
+
+                </div>
+
+
+                <!-- Hidden Description -->
+                <div *ngIf="isDropdownVisible">
+                    <div class="list-container">
+                        <ul>
+                            <li style="margin-right: 77px;">{{'Programmable Logic Controller' | translate}}</li>
+                            <li style="margin-right: 140px;">{{'BMS Protocol' | translate}}</li>
+                            <li style="margin-right: 143px;">{{'BMS Systems' | translate}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+
+
+            <!-- ************************************************************************** -->
+
+            <!-- dropdown.component.html -->
+            <div class="container mt-5">
+                <!-- <h2>Interactive Dropdown Example</h2> -->
+
+                <div (click)="sctoggleDropdown()"
+                    style="background-color: #295179;display: flex;justify-content: space-between;align-items: center;padding: 0px 29px; width: 85%;margin: auto;">
+                    <div>
+
+                        <img src="assets/images/industrial1.png" alt="Image 1" style="margin: 10px 16px 10px -5px; "
+                            class="rounded-circle" width="50px" height="50px">
+                        <h5 style="display: inline;">{{'Commercial' | translate}}</h5>
+                    </div>
+                    <i [class]="issecounddropdowen ? 'fa fa-angle-up' : 'fa fa-angle-down'" style="color:white;"></i>
+
+                </div>
+
+
+                <!-- Hidden Description -->
+                <div *ngIf="issecounddropdowen">
+                    <div class="list-container">
+                        <ul>
+                            <li style="margin-right: 100px;">{{'Smart IOT Devices' | translate}}</li>
+                            <li style="margin-right: 84px;">{{'Smart IOT Protocols' | translate}}</li>
+                            <li style="margin-right: 96px;">{{'Smart IOT Systems' | translate}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <br>
+</div>
+<button class="btn btn-danger btn-block" style="width: 170px; margin: auto;" (click)="downloadPdf()"><i class="fa fa-download" aria-hidden="true"></i>{{'Download as PDF' | translate}}</button>
